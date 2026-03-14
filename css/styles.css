@@ -98,7 +98,7 @@ body p {
 }
 
 
-/*  */
+
 footer {
     background-color: #C3B1E1;
     font-family: serif;
@@ -151,6 +151,8 @@ footer nav ul {
 
 .footer {
     grid-area: footer;
+    width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .contacto {
@@ -289,68 +291,602 @@ textarea {
     flex: 1;
 }
 
-@media (max-width: 768px) {
 
-    .bio,
-    .deporte {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+/* media query celular 375 px*/
 
-    .bio img,
-    .deporte img {
-        width: 90%;
-    }
+/* index */
+@media (max-width: 375px) {
 
-    .bio p,
-    .deporte p {
-        width: 90%;
-    }
-}
+  /* Textos */
+  body p {
+    font-size: 12px;
+    text-align: center;
+  }
 
-/* tablet */
-@media (max-width: 800px) {
+  main h2 {
+    font-size: 18px;
+    margin: 1.5rem 0 1rem 0;
+  }
 
+  main h3 {
+    font-size: 16px;
+    margin-bottom: 0.8rem;
+  }
+
+  .outfits p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  /* Header */
+  header.header {
+    padding: 1rem 0;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  header nav ul li {
+    list-style: none;
+  }
+
+  /* Main */
   main {
-    padding: 2rem;
+    padding: 1rem 1rem;
+    font-size: 16px;
   }
 
-  .container {
+  .productos,
+  .outfits {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 
+  /* CENTRAR LAS IMÁGENES */
+  .productos div,
+  .outfits div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .productos img,
+  .outfits img {
     width: 100%;
-    margin: 0;
-    padding: 2rem;
-  }  
-
-  main .productos {
-    grid-template-columns: repeat(2, 1fr);
+    max-width: 250px;
+    display: block;
   }
 
-  main .outfits {
-    grid-template-columns: repeat(2, 1fr);
+  /* Footer nav */
+  footer nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0;
+  }
+
+  /* Dropdown bootstrap */
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown button {
+    width: 100%;
+  }
+
+  /* pagina contacto */
+/* Body y textos */
+  body p,
+  .contacto h1,
+  .contacto h3,
+  .formulario label {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Header */
+  header.header {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  header.header img {
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  nav.breadcrumb {
+    padding: 0.5rem 0;
+  }
+
+  nav.breadcrumb ol {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  /* Main contacto */
+  main.main {
+    padding: 1rem;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contacto .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .contacto .logo img {
+    width: 60px;
+    height: auto;
+  }
+
+  /* Sidebar / Formulario */
+  aside.sidebar {
+    padding: 1rem;
   }
 
   .formulario {
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  /* Footer */
+  footer.footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0;
+  }
+
+  footer li {
+    list-style: none;
+  }
+
+/* pagina quien es nabi */
+ /* Header */
+  header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  header img {
+    width: 80px;
+    height: auto;
+    display: block;
     margin: 0 auto;
   }
 
-  input,
-  textarea {
-    width: 100%;
+  /* Breadcrumb */
+  nav.breadcrumb {
+    padding: 0.5rem;
   }
 
- footer {
-    width: 100%;
-    margin-top: 4rem;
-    padding: 2rem;
-  }
-
-  .footer {
-    width: 100%;
-    justify-self: stretch;
+  nav.breadcrumb ol {
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
   }
+
+  nav.breadcrumb li {
+    font-size: 12px;
+    margin: 0.2rem 0;
+  }
+
+  /* Main */
+  main {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  /* Sección bio */
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .bio img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .bio p {
+    font-size: 14px;
+  }
+
+  /* Sección deporte */
+  .deporte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .deporte img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .deporte p {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 1rem;
+  }
+
+  footer p {
+    margin: 0.3rem 0;
+  }
 }
+
+/* media query tablet 768 px */
+/* index */
+@media (max-width: 768px) {
+
+  /* Textos generales */
+  body p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  main h2 {
+    font-size: 20px;
+    margin: 2rem 0 1rem 0;
+  }
+
+  main h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  /* Header */
+  header.header {
+    padding: 1.5rem 0;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-left: 0;
+  }
+
+  header nav ul li {
+    list-style: none;
+  }
+
+  /* Main productos y outfits */
+  .productos,
+  .outfits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Centrar imágenes dentro de los divs */
+  .productos div,
+  .outfits div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .productos img,
+  .outfits img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+  }
+
+  .outfits p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  footer nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 0;
+  }
+
+  footer li {
+    list-style: none;
+  }
+
+  /* Dropdown bootstrap */
+  .dropdown {
+    width: auto;
+  }
+
+  .dropdown button {
+    width: auto;
+  }
+
+  /* pagina contacto */
+  /* Header */
+  header.header {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  header.header img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Breadcrumb */
+  nav.breadcrumb {
+    padding: 0.5rem;
+  }
+
+  nav.breadcrumb ol {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav.breadcrumb li {
+    font-size: 13px;
+    margin: 0.2rem 0;
+  }
+
+  /* Main contacto */
+  main.main {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contacto .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contacto .logo img {
+    width: 60px;
+    height: auto;
+  }
+
+  /* Sidebar / Formulario */
+  aside.sidebar {
+    padding: 1rem;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  /* Footer */
+  footer.footer {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  footer ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 0;
+  }
+
+  footer li {
+    list-style: none;
+  }
+
+  /* pagina quien es nabi */
+
+  /* Header */
+  header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  header .contenedor img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Breadcrumb */
+  nav.breadcrumb {
+    padding: 0.5rem;
+  }
+
+  nav.breadcrumb ol {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav.breadcrumb li {
+    font-size: 13px;
+    margin: 0.2rem 0;
+  }
+
+  /* Main */
+  main {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  /* Sección bio */
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .bio img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .bio p {
+    font-size: 14px;
+  }
+
+  /* Sección deporte */
+  .deporte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .deporte img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .deporte p {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 13px;
+    padding: 1.5rem;
+  }
+
+  footer p {
+    margin: 0.3rem 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
 
