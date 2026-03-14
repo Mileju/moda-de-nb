@@ -154,12 +154,11 @@ footer {
     gap: 1rem;
 }
 
-input {
+input,
     textarea {
         width: 100%;
         padding: 0.5rem;
     }
-}
 
 //quien es nabi
 .breadcrumb {
@@ -196,48 +195,35 @@ input {
 
 // media queries
 //TABLET
-@media (max-width: 800px) {
 
-main {
-  padding: 2rem;
-}
+@media (max-width: 768px) {
 
-main .productos {
-  grid-template-columns: repeat(2, 1fr);
-}
+  main {
+    padding: 2rem;
+  }
 
-main .outfits {
-  grid-template-columns: repeat(2, 1fr);
-}
+  main .productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 
-main .outfits img {
-  width: 100%;
-  max-width: 100%;
-}
+  main .outfits {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 
-.bio {
-  flex-direction: column;
-  text-align: center;
-}
+  main .outfits img {
+    max-width: 100%;
+  }
 
-.deporte {
-  flex-direction: column;
-  text-align: center;
-}
+  .bio {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.bio img,
-.deporte img {
-  width: 100%;
-  max-width: 400px;
-}
-
-.contacto {
-  width: 100%;
-  padding: 1rem;
-}
-
-.formulario {
-  width: 100%;
-}
+  .deporte {
+    flex-direction: column;
+    text-align: center;
+  }
 
 }

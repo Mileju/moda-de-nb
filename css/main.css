@@ -136,7 +136,8 @@ footer nav ul {
   gap: 1rem;
 }
 
-input textarea {
+input,
+textarea {
   width: 100%;
   padding: 0.5rem;
 }
@@ -174,18 +175,19 @@ input textarea {
   height: auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   main {
     padding: 2rem;
   }
   main .productos {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
   main .outfits {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
   main .outfits img {
-    width: 100%;
     max-width: 100%;
   }
   .bio {
@@ -195,18 +197,6 @@ input textarea {
   .deporte {
     flex-direction: column;
     text-align: center;
-  }
-  .bio img,
-  .deporte img {
-    width: 100%;
-    max-width: 400px;
-  }
-  .contacto {
-    width: 100%;
-    padding: 1rem;
-  }
-  .formulario {
-    width: 100%;
   }
 }
 
