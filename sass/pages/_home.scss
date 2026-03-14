@@ -51,11 +51,29 @@ main {
         gap: 2rem;
         margin-top: 2rem;
     }
+
     .outfits {
-        img {
-            @include imagen (100%)
+        @include grilla;
+        gap: 2.5rem;
+        margin-top: 2rem;
 
-
+        div:hover {
+            padding: 1rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
         }
+
+        p {
+            font-weight: 600;
+            font-family: serif;
+        }
+
+        img {
+            @include imagen (100%); 
+            max-width: 300px;
+            height: auto;
+        }
+
+
     }
 }

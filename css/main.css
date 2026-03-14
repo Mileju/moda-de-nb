@@ -46,8 +46,25 @@ main .productos {
   gap: 2rem;
   margin-top: 2rem;
 }
+main .outfits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+main .outfits div:hover {
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+main .outfits p {
+  font-weight: 600;
+  font-family: serif;
+}
 main .outfits img {
   width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
