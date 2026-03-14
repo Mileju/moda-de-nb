@@ -175,27 +175,37 @@ textarea {
   height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   main {
+    padding: 2rem;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
     padding: 2rem;
   }
   main .productos {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
   }
   main .outfits {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
   }
-  main .outfits img {
-    max-width: 100%;
+  .formulario {
+    max-width: 500px;
+    margin: 0 auto;
   }
-  .bio {
-    flex-direction: column;
-    text-align: center;
+  input,
+  textarea {
+    width: 100%;
   }
-  .deporte {
-    flex-direction: column;
+  footer {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 2rem;
+  }
+  .footer {
+    width: 100%;
+    justify-self: stretch;
     text-align: center;
   }
 }

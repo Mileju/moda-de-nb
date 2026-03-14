@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,8 +7,8 @@
 /* body */
 /* header */
 .contenedor {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
@@ -109,7 +109,7 @@ footer {
     margin-top: 4rem;
     padding: 2rem;
 }
- 
+
 footer nav ul {
     display: flex;
     flex-direction: column;
@@ -119,89 +119,93 @@ footer nav ul {
 /* Pagina Contacto */
 
 .header {
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
 }
 
 
 .container {
-  display: grid;
-  gap: 20px;
-grid-template-columns: 1fr;
-grid-template-areas:
-    "header"
-    "main"
-    "sidebar"
-    "footer";
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "footer";
 }
 
-.header { 
-    grid-area: header; 
+.header {
+    grid-area: header;
 }
-.main { 
-    grid-area: main; 
+
+.main {
+    grid-area: main;
 }
+
 .sidebar {
-     grid-area: sidebar; 
-    }
-.footer { 
-    grid-area: footer; 
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
 }
 
 .contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .logo {
-  display: flex;
-  align-items: center;   
-  justify-content: center; 
-  gap: 1rem;             
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .logo img {
-  width: 40px;
+    width: 40px;
 }
 
 .contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .logo img {
-  width: 40px;
+    width: 40px;
 }
 
 .formulario {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-input, textarea {
-  width: 100%;
-  padding: 0.5rem;
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
 }
 
 /* pagina de Quien es NABI */
 .header {
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
 }
 
 .breadcrumb {
@@ -226,7 +230,7 @@ input, textarea {
 
 .deporte {
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
     align-items: center;
     gap: 30px;
     margin: 40px 0;
@@ -242,10 +246,10 @@ input, textarea {
 }
 
 .header {
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
 }
 
 .breadcrumb {
@@ -270,7 +274,7 @@ input, textarea {
 
 .deporte {
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
     align-items: center;
     gap: 30px;
     margin: 40px 0;
@@ -306,3 +310,47 @@ input, textarea {
 }
 
 /* tablet */
+@media (max-width: 800px) {
+
+  main {
+    padding: 2rem;
+  }
+
+  .container {
+
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+  }  
+
+  main .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .outfits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .formulario {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+ footer {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 2rem;
+  }
+
+  .footer {
+    width: 100%;
+    justify-self: stretch;
+    text-align: center;
+  }
+}
+
