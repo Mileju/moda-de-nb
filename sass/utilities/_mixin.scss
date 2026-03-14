@@ -10,6 +10,11 @@
     justify-content: center;
 }
 
+@mixin direction {
+    display: flex;
+    flex-direction: column;
+}
+
 //con parametros
 @mixin grilla {
     display: grid;
@@ -20,6 +25,12 @@
     width: 300px;
     height: auto;
 }
+
+@mixin pixeles {
+    gap: 30px;
+    margin: 40px 0;
+}
+
 
 //con y sin parametros
 @mixin imagen ($width) {

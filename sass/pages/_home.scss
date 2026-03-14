@@ -1,6 +1,14 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixin" as *;
 
+//index
+//body
+body {
+    p {
+        font-size: 14px;
+    }
+}
+
 //header
 
 header {
@@ -69,11 +77,152 @@ main {
         }
 
         img {
-            @include imagen (100%); 
+            @include imagen (100%);
             max-width: 300px;
             height: auto;
         }
 
 
     }
+}
+
+//footer
+footer {
+    color: $color-secundario;
+    font-family: serif;
+    margin-top: 4rem;
+    padding: 2rem;
+
+    nav {
+        ul {
+            @include direction;
+            gap: 1rem;
+        }
+    }
+}
+
+//pagina de contacto
+.header {
+    @include flex;
+    padding: 2rem 0;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.contacto {
+    @include direction;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    @include flex;
+    gap: 1rem;
+
+    img {
+        @include imagen (40px);
+    }
+}
+
+.formulario {
+    @include direction;
+    gap: 1rem;
+}
+
+input {
+    textarea {
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
+
+//quien es nabi
+.breadcrumb {
+    justify-content: center;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    @include pixeles;
+
+    p {
+        flex: 1;
+    }
+
+    img {
+        @include img;
+    }
+}
+
+.deporte {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    @include pixeles;
+
+    p {
+     flex: 1;
+    }
+    img {
+        @include img;
+    }
+}
+
+// media queries
+//TABLET
+@media (max-width: 768px) {
+
+main {
+  padding: 2rem;
+}
+
+main .productos {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main .outfits {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bio {
+  flex-direction: column;
+  text-align: center;
+}
+
+.deporte {
+  flex-direction: column;
+  text-align: center;
+}
+
+.bio img,
+.deporte img {
+  width: 250px;
+}
+
 }
