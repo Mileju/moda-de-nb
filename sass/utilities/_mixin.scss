@@ -5,15 +5,20 @@
     justify-content: center;
 }
 
+@mixin display {
+    display: flex;
+    justify-content: center;
+}
+
 //con parametros
 @mixin grilla ($colum, $row) {
- grid-template-columns: $colum;
- grid-template-rows: $row;
+    grid-template-columns: $colum;
+    grid-template-rows: $row;
 }
 
 //con y sin parametros
 @mixin imagen ($width) {
-    width:$width;
+    width: $width;
     max-width: 300px;
     height: auto;
 }
