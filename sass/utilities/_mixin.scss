@@ -11,14 +11,17 @@
 }
 
 //con parametros
-@mixin grilla ($colum, $row) {
-    grid-template-columns: $colum;
-    grid-template-rows: $row;
+@mixin grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+}
+
+@mixin img {
+    width: 300px;
+    height: auto;
 }
 
 //con y sin parametros
 @mixin imagen ($width) {
     width: $width;
-    max-width: 300px;
-    height: auto;
 }

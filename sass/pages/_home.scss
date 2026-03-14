@@ -7,15 +7,16 @@ header {
     padding: 1.5rem 0;
     margin-bottom: 2rem;
 
-.contenedor {
-    @include display
-}
+    .contenedor {
+        @include display
+    }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav {
         ul {
             list-style: none;
@@ -27,4 +28,34 @@ header {
 }
 
 //main
+main {
+    padding: 3rem 4rem;
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
 
+    h1 {
+        color: $color-principal;
+    }
+
+    h2 {
+        margin: 3rem 0 1.5rem 0;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    .productos {
+        @include grilla;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .outfits {
+        img {
+            @include imagen (100%)
+
+
+        }
+    }
+}
