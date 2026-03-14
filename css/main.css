@@ -174,4 +174,40 @@ input textarea {
   height: auto;
 }
 
+@media (max-width: 800px) {
+  main {
+    padding: 2rem;
+  }
+  main .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .outfits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .outfits img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .bio {
+    flex-direction: column;
+    text-align: center;
+  }
+  .deporte {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bio img,
+  .deporte img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .contacto {
+    width: 100%;
+    padding: 1rem;
+  }
+  .formulario {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
