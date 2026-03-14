@@ -196,33 +196,3 @@ input {
 
 // media queries
 //TABLET
-@media (max-width: 768px) {
-
-main {
-  padding: 2rem;
-}
-
-main .productos {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-main .outfits {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.bio {
-  flex-direction: column;
-  text-align: center;
-}
-
-.deporte {
-  flex-direction: column;
-  text-align: center;
-}
-
-.bio img,
-.deporte img {
-  width: 250px;
-}
-
-}
