@@ -154,6 +154,8 @@ textarea {
 }
 .bio p {
   flex: 1;
+  font-family: serif;
+  font-size: large;
 }
 .bio img {
   width: 300px;
@@ -169,6 +171,8 @@ textarea {
 }
 .deporte p {
   flex: 1;
+  font-family: serif;
+  font-size: large;
 }
 .deporte img {
   width: 300px;

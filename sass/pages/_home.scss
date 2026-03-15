@@ -172,6 +172,8 @@ textarea {
 
     p {
         flex: 1;
+        font-family: serif;
+        font-size: large;
     }
 
     img {
@@ -187,6 +189,8 @@ textarea {
 
     p {
         flex: 1;
+        font-family: serif;
+        font-size: large;
     }
 
     img {
@@ -307,188 +311,189 @@ footer {
         }
     }
 
-            .contacto h1,
-            .contacto h3 {
-                font-size: 14px;
-                text-align: center;
-            }
-
-            .formulario label {
-                font-size: 14px;
-                text-align: center;
-            }
-        }
-    
-
-    /* Header */
-    header {
-        .header {
-            padding: 1rem 0;
-            @include bio;
-            gap: 0.5rem;
-        }
-
-        img {
-            @include imagen (80px);
-            @include margin;
-
-        }
+    .contacto h1,
+    .contacto h3 {
+        font-size: 14px;
+        text-align: center;
     }
 
-    nav {
-        .breadcrumb {
-            padding: 0.5rem 0;
-        }
-
-        ol {
-            justify-content: center;
-            flex-wrap: wrap;
-            text-align: center;
-        }
+    .formulario label {
+        font-size: 14px;
+        text-align: center;
     }
+}
 
-    /* Main contacto */
-    main {
-        .main {
-            padding: 1rem;
-        }
 
-        .contacto {
-            @include bio;
-            gap: 1rem;
-        }
-
-        .logo {
-            @include bio;
-            gap: 0.5rem;
-        }
-
-        img {
-            @include imagen (60px);
-            height: auto;
-        }
-    }
-
-    /*Formulario */
-    aside {
-        .sidebar {
-            padding: 1rem;
-        }
-    }
-
-    .formulario {
-        display: flex;
-        @include gap;
-
-        input {
-            textarea {
-                @include imagen (100%);
-                padding: 0.5rem;
-
-            }
-        }
-    }
-
-    footer {
-        ul {
-            @include gap;
-            padding-left: 0;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        .footer {
-            padding: 1rem;
-            text-align: center;
-            font-size: 12px;
-        }
-    }
-
-    /* pagina quien es nabi */
-    /* Header */
-    header {
+/* Header */
+header {
+    .header {
+        padding: 1rem 0;
         @include bio;
         gap: 0.5rem;
-        padding: 1rem 0;
-
-        img {
-            @include imagen (80px);
-            @include margin;
-
-            nav {
-                .breadcrumb {
-                    padding: 0.5rem;
-                }
-
-                ol {
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    text-align: center;
-                }
-
-                li {
-                    font-size: 12px;
-                    margin: 0.2rem 0;
-                }
-            }
-        }
     }
 
+    img {
+        @include imagen (80px);
+        @include margin;
 
-    /* Main */
-    main {
+    }
+}
+
+nav {
+    .breadcrumb {
+        padding: 0.5rem 0;
+    }
+
+    ol {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+/* Main contacto */
+main {
+    .main {
         padding: 1rem;
-        font-size: 14px;
+    }
 
-        .bio {
-            @include bio;
-            gap: 1rem;
-            text-align: center;
-            margin: 1rem 0;
+    .contacto {
+        @include bio;
+        gap: 1rem;
+    }
 
-            img {
-                @include imagen (100%);
-                max-width: 250px;
-                @include margin;
+    .logo {
+        @include bio;
+        gap: 0.5rem;
+    }
+
+    img {
+        @include imagen (60px);
+        height: auto;
+    }
+}
+
+/*Formulario */
+aside {
+    .sidebar {
+        padding: 1rem;
+    }
+}
+
+.formulario {
+    display: flex;
+    @include gap;
+
+    input {
+        textarea {
+            @include imagen (100%);
+            padding: 0.5rem;
+
+        }
+    }
+}
+
+footer {
+    ul {
+        @include gap;
+        padding-left: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .footer {
+        padding: 1rem;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+/* pagina quien es nabi */
+/* Header */
+header {
+    @include bio;
+    gap: 0.5rem;
+    padding: 1rem 0;
+
+    img {
+        @include imagen (80px);
+        @include margin;
+
+        nav {
+            .breadcrumb {
+                padding: 0.5rem;
             }
 
-            p {
-                font-size: 14px;
+            ol {
+                flex-wrap: wrap;
+                justify-content: center;
                 text-align: center;
             }
 
-        }
-
-
-        .deporte {
-            @include bio;
-            gap: 1rem;
-            text-align: center;
-            margin: 1rem 0;
-
-            img {
-                @include imagen (100%);
-                max-width: 250px;
-                @include margin;
+            li {
+                font-size: 12px;
+                margin: 0.2rem 0;
             }
-                p {
-                    font-size: 14px;
-                }
         }
     }
+}
 
-    /* Footer */
-    footer {
+
+/* Main */
+main {
+    padding: 1rem;
+    font-size: 14px;
+
+    .bio {
+        @include bio;
+        gap: 1rem;
         text-align: center;
-        font-size: 12px;
-        padding: 1rem;
+        margin: 1rem 0;
+
+        img {
+            @include imagen (100%);
+            max-width: 250px;
+            @include margin;
+        }
 
         p {
-            margin: 0.3rem 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+    }
+
+
+    .deporte {
+        @include bio;
+        gap: 1rem;
+        text-align: center;
+        margin: 1rem 0;
+
+        img {
+            @include imagen (100%);
+            max-width: 250px;
+            @include margin;
+        }
+
+        p {
+            font-size: 14px;
         }
     }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 1rem;
+
+    p {
+        margin: 0.3rem 0;
+    }
+}
 
 
 /* media query tablet 768 px */

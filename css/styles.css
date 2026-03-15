@@ -272,6 +272,8 @@ textarea {
 
 .bio p {
     flex: 1;
+    font-family: serif;
+    font-size: large;
 }
 
 .deporte {
@@ -289,6 +291,8 @@ textarea {
 
 .deporte p {
     flex: 1;
+    font-family: serif;
+    font-size: large;
 }
 
 
