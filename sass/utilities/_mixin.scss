@@ -53,6 +53,12 @@
     align-items: center;
 }
 
+@mixin breadcrumb {
+      flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
 //con y sin parametros
 @mixin imagen ($width) {
     width: $width;

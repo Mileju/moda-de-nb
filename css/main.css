@@ -251,176 +251,221 @@ footer p {
     max-width: 250px;
     display: block;
   }
+  /* Footer nav */
+  footer nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0;
+  }
+  /* Dropdown bootstrap */
+  .dropdown button {
+    width: 100%;
+  }
+  body p .contacto h1 h3 .formulario label {
+    font-size: 14px;
+    text-align: center;
+  }
+  /* Header */
+  header .header {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  header img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  nav .breadcrumb {
+    padding: 0.5rem 0;
+  }
+  nav ol {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  /* Main contacto */
+  main .main {
+    padding: 1rem;
+  }
+  main .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  main img {
+    width: 60px;
+    height: auto;
+  }
+  /*Formulario */
+  aside .sidebar {
+    padding: 1rem;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .formulario input textarea {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  footer ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0;
+  }
+  footer li {
+    list-style: none;
+  }
+  footer .footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 12px;
+  }
+  /* pagina quien es nabi */
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+  header img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  header img nav .breadcrumb {
+    padding: 0.5rem;
+  }
+  header img nav ol {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  header img nav li {
+    font-size: 12px;
+    margin: 0.2rem 0;
+  }
+  /* Main */
+  main {
+    padding: 1rem;
+    font-size: 14px;
+  }
+  main .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  main .bio img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  main .bio img p {
+    font-size: 14px;
+  }
+  main .deporte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  main .deporte img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  main .deporte img p {
+    font-size: 14px;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 1rem;
+  }
+  footer p {
+    margin: 0.3rem 0;
+  }
 }
-/* Footer nav */
-footer nav ul {
+/* media query tablet 768 px */
+/* index */
+@media (max-width: 768px) {
+  body p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+main h2 {
+  font-size: 20px;
+  margin: 2rem 0 1rem 0;
+}
+main h3 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+main header .header {
+  padding: 1.5rem 0;
+}
+main header .contenedor {
   flex-direction: column;
   gap: 0.5rem;
-  padding-left: 0;
-}
-
-/* Dropdown bootstrap */
-.dropdown button {
-  width: 100%;
-}
-
-body p .contacto h1 h3 .formulario label {
-  font-size: 14px;
-  text-align: center;
-}
-
-/* Header */
-header .header {
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
 }
-header img {
-  width: 80px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-nav .breadcrumb {
-  padding: 0.5rem 0;
-}
-nav ol {
-  justify-content: center;
+main header nav ul {
+  flex-direction: row;
   flex-wrap: wrap;
-  text-align: center;
-}
-
-/* Main contacto */
-main .main {
-  padding: 1rem;
-}
-main .contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   gap: 1rem;
-}
-main .logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-main img {
-  width: 60px;
-  height: auto;
-}
-
-/*Formulario */
-aside .sidebar {
-  padding: 1rem;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.formulario input textarea {
-  width: 100%;
-  padding: 0.5rem;
-}
-
-footer ul {
-  flex-direction: column;
-  gap: 0.5rem;
+  margin-top: 1rem;
   padding-left: 0;
 }
-footer li {
+main header nav li {
   list-style: none;
 }
-footer .footer {
-  padding: 1rem;
-  text-align: center;
-  font-size: 12px;
+main .productos,
+main .outfits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
-
-/* pagina quien es nabi */
-/* Header */
-header {
+main .productos div,
+main .outfits div {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 0;
-}
-header img {
-  width: 80px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-header img nav .breadcrumb {
-  padding: 0.5rem;
-}
-header img nav ol {
-  flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
 }
-header img nav li {
-  font-size: 12px;
-  margin: 0.2rem 0;
-}
-
-/* Main */
-main {
-  padding: 1rem;
-  font-size: 14px;
-}
-main .bio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  text-align: center;
-  margin: 1rem 0;
-}
-main .bio img {
+main .productos img,
+main .outfits img {
   width: 100%;
-  max-width: 250px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
-main .bio img p {
+main .outfits p {
   font-size: 14px;
-}
-main .deporte {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
   text-align: center;
-  margin: 1rem 0;
-}
-main .deporte img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-main .deporte img p {
-  font-size: 14px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  font-size: 12px;
-  padding: 1rem;
-}
-footer p {
-  margin: 0.3rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */

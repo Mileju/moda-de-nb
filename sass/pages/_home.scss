@@ -287,205 +287,285 @@ footer {
             }
         }
     }
-}
 
-/* Footer nav */
 
-footer {
-    nav {
-        ul {
-            @include gap;
-            padding-left: 0;
+    /* Footer nav */
+
+    footer {
+        nav {
+            ul {
+                @include gap;
+                padding-left: 0;
+            }
         }
     }
-}
 
-/* Dropdown bootstrap */
-.dropdown {
-    button {
-        width: 100%;
+    /* Dropdown bootstrap */
+    .dropdown {
+        button {
+            width: 100%;
+        }
     }
-}
 
-body {
-    p {
-        .contacto h1 {
-            h3 {
-                .formulario {
-                    label {
-                        font-size: 14px;
-                        text-align: center;
+    body {
+        p {
+            .contacto h1 {
+                h3 {
+                    .formulario {
+                        label {
+                            font-size: 14px;
+                            text-align: center;
+                        }
                     }
                 }
             }
         }
     }
-}
 
-/* Header */
-header {
-    .header {
+    /* Header */
+    header {
+        .header {
+            padding: 1rem 0;
+            @include bio;
+            gap: 0.5rem;
+        }
+
+        img {
+            @include imagen (80px);
+            @include margin;
+
+        }
+    }
+
+    nav {
+        .breadcrumb {
+            padding: 0.5rem 0;
+        }
+
+        ol {
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+    }
+
+    /* Main contacto */
+    main {
+        .main {
+            padding: 1rem;
+        }
+
+        .contacto {
+            @include bio;
+            gap: 1rem;
+        }
+
+        .logo {
+            @include bio;
+            gap: 0.5rem;
+        }
+
+        img {
+            @include imagen (60px);
+            height: auto;
+        }
+    }
+
+    /*Formulario */
+    aside {
+        .sidebar {
+            padding: 1rem;
+        }
+    }
+
+    .formulario {
+        display: flex;
+        @include gap;
+
+        input {
+            textarea {
+                @include imagen (100%);
+                padding: 0.5rem;
+
+            }
+        }
+    }
+
+    footer {
+        ul {
+            @include gap;
+            padding-left: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .footer {
+            padding: 1rem;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+    /* pagina quien es nabi */
+    /* Header */
+    header {
+        @include bio;
+        gap: 0.5rem;
         padding: 1rem 0;
-        @include bio;
-        gap: 0.5rem;
+
+        img {
+            @include imagen (80px);
+            @include margin;
+
+            nav {
+                .breadcrumb {
+                    padding: 0.5rem;
+                }
+
+                ol {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                li {
+                    font-size: 12px;
+                    margin: 0.2rem 0;
+                }
+            }
+        }
     }
 
-    img {
-        @include imagen (80px);
-        @include margin;
 
+    /* Main */
+    main {
+        padding: 1rem;
+        font-size: 14px;
+
+        .bio {
+            @include bio;
+            gap: 1rem;
+            text-align: center;
+            margin: 1rem 0;
+
+            img {
+                @include imagen (100%);
+                max-width: 250px;
+                @include margin;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .deporte {
+            @include bio;
+            gap: 1rem;
+            text-align: center;
+            margin: 1rem 0;
+
+            img {
+                @include imagen (100%);
+                max-width: 250px;
+                @include margin;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
     }
-}
 
-nav {
-    .breadcrumb {
-        padding: 0.5rem 0;
-    }
-
-    ol {
-        justify-content: center;
-        flex-wrap: wrap;
+    /* Footer */
+    footer {
         text-align: center;
-    }
-}
-
-/* Main contacto */
-main {
-    .main {
+        font-size: 12px;
         padding: 1rem;
-    }
 
-    .contacto {
-        @include bio;
-        gap: 1rem;
-    }
-
-    .logo {
-        @include bio;
-        gap: 0.5rem;
-    }
-
-    img {
-        @include imagen (60px);
-        height: auto;
-    }
-}
-
-/*Formulario */
-aside {
-    .sidebar {
-        padding: 1rem;
-    }
-}
-
-.formulario {
-    display: flex;
-    @include gap;
-
-    input {
-        textarea {
-            @include imagen (100%);
-            padding: 0.5rem;
-
+        p {
+            margin: 0.3rem 0;
         }
     }
 }
 
-footer {
-    ul {
-        @include gap;
-        padding-left: 0;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    .footer {
-        padding: 1rem;
-        text-align: center;
-        font-size: 12px;
+/* media query tablet 768 px */
+/* index */
+@media (max-width: 768px) {
+    body {
+        p {
+            @include texto;
+        }
     }
 }
 
-/* pagina quien es nabi */
-/* Header */
-header {
-    @include bio;
-    gap: 0.5rem;
-    padding: 1rem 0;
+main {
+    h2 {
+        font-size: 20px;
+        margin: 2rem 0 1rem 0;
+    }
 
-    img {
-        @include imagen (80px);
-        @include margin;
+    h3 {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+
+
+    header {
+        .header {
+            padding: 1.5rem 0;
+        }
+
+        .contenedor {
+            @include gap;
+            align-items: center;
+        }
 
         nav {
-            .breadcrumb {
-                padding: 0.5rem;
-            }
-
-            ol {
+            ul {
+                flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
-                text-align: center;
+                gap: 1rem;
+                margin-top: 1rem;
+                padding-left: 0;
             }
 
             li {
-                font-size: 12px;
-                margin: 0.2rem 0;
+                list-style: none;
             }
         }
     }
-}
 
-/* Main */
-main {
-    padding: 1rem;
-    font-size: 14px;
+    .productos,
+    .outfits {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-top: 1.5rem;
 
-    .bio {
-        @include bio;
-        gap: 1rem;
-        text-align: center;
-        margin: 1rem 0;
+        div {
+            @include flex;
+        }
 
         img {
             @include imagen (100%);
-            max-width: 250px;
-            @include margin;
-
-            p {
-                font-size: 14px;
-            }
         }
     }
 
-    .deporte {
-        @include bio;
-        gap: 1rem;
-        text-align: center;
-        margin: 1rem 0;
-
-        img {
-            @include imagen (100%);
-            max-width: 250px;
-            @include margin;
-
-            p {
-                font-size: 14px;
-            }
+    .outfits {
+        p {
+            font-size: 14px;
+            text-align: center;
         }
     }
+
+
+
+
+
+
+
 }
-
-/* Footer */
-footer {
-    text-align: center;
-    font-size: 12px;
-    padding: 1rem;
-
-    p {
-        margin: 0.3rem 0;
-    }
-}
-
