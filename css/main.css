@@ -371,4 +371,56 @@ header img nav li {
   margin: 0.2rem 0;
 }
 
+/* Main */
+main {
+  padding: 1rem;
+  font-size: 14px;
+}
+main .bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+main .bio img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+main .bio img p {
+  font-size: 14px;
+}
+main .deporte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+main .deporte img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+main .deporte img p {
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 1rem;
+}
+footer p {
+  margin: 0.3rem 0;
+}
+
 /*# sourceMappingURL=main.css.map */

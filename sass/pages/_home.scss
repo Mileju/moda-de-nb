@@ -437,3 +437,55 @@ header {
         }
     }
 }
+
+/* Main */
+main {
+    padding: 1rem;
+    font-size: 14px;
+
+    .bio {
+        @include bio;
+        gap: 1rem;
+        text-align: center;
+        margin: 1rem 0;
+
+        img {
+            @include imagen (100%);
+            max-width: 250px;
+            @include margin;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .deporte {
+        @include bio;
+        gap: 1rem;
+        text-align: center;
+        margin: 1rem 0;
+
+        img {
+            @include imagen (100%);
+            max-width: 250px;
+            @include margin;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 1rem;
+
+    p {
+        margin: 0.3rem 0;
+    }
+}
+
