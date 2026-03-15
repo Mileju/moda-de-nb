@@ -321,3 +321,119 @@ body {
         }
     }
 }
+
+/* Header */
+header {
+    .header {
+        padding: 1rem 0;
+        @include bio;
+        gap: 0.5rem;
+    }
+
+    img {
+        @include imagen (80px);
+        @include margin;
+
+    }
+}
+
+nav {
+    .breadcrumb {
+        padding: 0.5rem 0;
+    }
+
+    ol {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+/* Main contacto */
+main {
+    .main {
+        padding: 1rem;
+    }
+
+    .contacto {
+        @include bio;
+        gap: 1rem;
+    }
+
+    .logo {
+        @include bio;
+        gap: 0.5rem;
+    }
+
+    img {
+        @include imagen (60px);
+        height: auto;
+    }
+}
+
+/*Formulario */
+aside {
+    .sidebar {
+        padding: 1rem;
+    }
+}
+
+.formulario {
+    display: flex;
+    @include gap;
+
+    input {
+        textarea {
+            @include imagen (100%);
+            padding: 0.5rem;
+
+        }
+    }
+}
+
+footer {
+    ul {
+        @include gap;
+        padding-left: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .footer {
+        padding: 1rem;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+/* pagina quien es nabi */
+/* Header */
+header {
+    @include bio;
+    gap: 0.5rem;
+    padding: 1rem 0;
+
+    img {
+        @include imagen (80px);
+        @include margin;
+
+        nav {
+            .breadcrumb {
+                padding: 0.5rem;
+            }
+
+            ol {
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+            }
+
+            li {
+                font-size: 12px;
+                margin: 0.2rem 0;
+            }
+        }
+    }
+}
