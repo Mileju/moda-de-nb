@@ -18,7 +18,7 @@
 //con parametros
 @mixin grilla {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  
+    grid-template-columns: repeat(3, 1fr);
 }
 
 @mixin img {
@@ -31,6 +31,15 @@
     margin: 40px 0;
 }
 
+@mixin texto {
+    font-size: 14px;
+    text-align: center;
+}
+
+@mixin gap {
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 //con y sin parametros
 @mixin imagen ($width) {

@@ -175,4 +175,60 @@ textarea {
   height: auto;
 }
 
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 1rem;
+}
+footer p {
+  margin: 0.3rem 0;
+}
+
+/* MQ TABLET 768 px */
+/* index */
+@media (max-width: 375px) {
+  /* texto */
+  body p {
+    font-size: 12px;
+    text-align: center;
+  }
+  main h2 {
+    font-size: 18px;
+    margin: 1.5rem 0 1rem 0;
+  }
+  main h3 {
+    font-size: 16px;
+    margin-bottom: 0.8rem;
+  }
+  .outfits p {
+    font-size: 14px;
+    text-align: center;
+  }
+  footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 12px;
+  }
+  header .header {
+    padding: 1rem 0;
+  }
+  header .contenedor {
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding-left: 0;
+    text-align: center;
+  }
+  header nav li {
+    list-style: none;
+  }
+  /* Main */
+}
+
 /*# sourceMappingURL=main.css.map */

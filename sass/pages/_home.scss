@@ -155,10 +155,10 @@ footer {
 }
 
 input,
-    textarea {
-        width: 100%;
-        padding: 0.5rem;
-    }
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
 
 //quien es nabi
 .breadcrumb {
@@ -186,14 +186,85 @@ input,
     @include pixeles;
 
     p {
-     flex: 1;
+        flex: 1;
     }
+
     img {
         @include img;
     }
 }
 
-// media queries
-//TABLET
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 1rem;
+
+    p {
+        margin: 0.3rem 0;
+    }
+}
+
+/* MQ TABLET 768 px */
+/* index */
+@media (max-width: 375px) {
+
+    /* texto */
+    body {
+        p {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    main {
+        h2 {
+            font-size: 18px;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    .outfits {
+        p {
+            @include texto;
+        }
+    }
+
+    footer {
+        padding: 1rem;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    header {
+        .header {
+            padding: 1rem 0;
+        }
+
+        .contenedor {
+            @include gap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            ul {
+                @include gap;
+                margin-top: 0.5rem;
+                padding-left: 0;
+                text-align: center;
+            }
+            li{
+                list-style: none;
+            }
+        }
+    }
+
+    /* Main */
 
 
+}
