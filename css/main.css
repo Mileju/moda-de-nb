@@ -184,7 +184,7 @@ footer p {
   margin: 0.3rem 0;
 }
 
-/* MQ TABLET 768 px */
+/* MQ celular 375 px */
 /* index */
 @media (max-width: 375px) {
   /* texto */
@@ -261,35 +261,277 @@ footer p {
   .dropdown button {
     width: 100%;
   }
-  body p .contacto h1 h3 .formulario label {
+  .contacto h1,
+  .contacto h3 {
     font-size: 14px;
     text-align: center;
   }
+  .formulario label {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+/* Header */
+header .header {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+header img {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+nav .breadcrumb {
+  padding: 0.5rem 0;
+}
+nav ol {
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Main contacto */
+main .main {
+  padding: 1rem;
+}
+main .contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+main .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+main img {
+  width: 60px;
+  height: auto;
+}
+
+/*Formulario */
+aside .sidebar {
+  padding: 1rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.formulario input textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+footer ul {
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 0;
+}
+footer li {
+  list-style: none;
+}
+footer .footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* pagina quien es nabi */
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+header img {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+header img nav .breadcrumb {
+  padding: 0.5rem;
+}
+header img nav ol {
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+header img nav li {
+  font-size: 12px;
+  margin: 0.2rem 0;
+}
+
+/* Main */
+main {
+  padding: 1rem;
+  font-size: 14px;
+}
+main .bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+main .bio img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+main .bio p {
+  font-size: 14px;
+  text-align: center;
+}
+main .deporte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+main .deporte img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+main .deporte p {
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 1rem;
+}
+footer p {
+  margin: 0.3rem 0;
+}
+
+/* media query tablet 768 px */
+/* index */
+@media (max-width: 768px) {
+  body p {
+    font-size: 14px;
+    text-align: center;
+  }
+  main h2 {
+    font-size: 20px;
+    margin: 2rem 0 1rem 0;
+  }
+  main h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  main header .header {
+    padding: 1.5rem 0;
+  }
+  main header .contenedor {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  main header nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-left: 0;
+  }
+  main header nav li {
+    list-style: none;
+  }
+  main .productos,
+  main .outfits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  main .productos div,
+  main .outfits div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .productos img,
+  main .outfits img {
+    width: 100%;
+  }
+  main .outfits p {
+    font-size: 14px;
+    text-align: center;
+  }
+  footer {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 13px;
+  }
+  footer nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 0;
+  }
+  footer nav li {
+    list-style: none;
+  }
+  .dropdown {
+    width: auto;
+  }
+  .dropdown button {
+    width: auto;
+  }
+  /* pagina contacto */
   /* Header */
-  header .header {
-    padding: 1rem 0;
+  header {
+    padding: 1.5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
   }
   header img {
-    width: 80px;
+    width: 100px;
     height: auto;
     display: block;
     margin: 0 auto;
   }
-  nav .breadcrumb {
-    padding: 0.5rem 0;
+  header nav .breadcrumb {
+    padding: 0.5rem;
   }
-  nav ol {
-    justify-content: center;
+  header nav ol {
     flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
   }
-  /* Main contacto */
+  header nav li {
+    font-size: 13px;
+    margin: 0.2rem 0;
+  }
+  /*main*/
   main .main {
     padding: 1rem;
+    font-size: 14px;
   }
   main .contacto {
     display: flex;
@@ -297,70 +539,71 @@ footer p {
     align-items: center;
     gap: 1rem;
   }
-  main .logo {
+  main .contacto .logo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
   }
-  main img {
-    width: 60px;
+  main .contacto img {
+    width: 100%;
     height: auto;
   }
-  /*Formulario */
-  aside .sidebar {
+  main aside .sidebar {
     padding: 1rem;
   }
-  .formulario {
+  main aside .formulario {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
-  .formulario input textarea {
+  main aside .formulario input,
+  main aside .formulario textarea {
     width: 100%;
     padding: 0.5rem;
   }
+  /*footer*/
   footer ul {
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
     padding-left: 0;
   }
   footer li {
     list-style: none;
   }
   footer .footer {
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
   }
   /* pagina quien es nabi */
   /* Header */
-  header {
+  header .contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 0;
   }
-  header img {
-    width: 80px;
+  header .contenedor img {
+    width: 100px;
     height: auto;
     display: block;
     margin: 0 auto;
   }
-  header img nav .breadcrumb {
+  header nav .breadcrumb {
     padding: 0.5rem;
   }
-  header img nav ol {
+  header nav .breadcrumb ol {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
   }
-  header img nav li {
-    font-size: 12px;
+  header nav .breadcrumb ol li {
+    font-size: 13px;
     margin: 0.2rem 0;
   }
-  /* Main */
   main {
     padding: 1rem;
     font-size: 14px;
@@ -375,12 +618,12 @@ footer p {
   }
   main .bio img {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
     display: block;
     margin: 0 auto;
   }
-  main .bio img p {
+  main .bio p {
     font-size: 14px;
   }
   main .deporte {
@@ -393,79 +636,23 @@ footer p {
   }
   main .deporte img {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
     display: block;
     margin: 0 auto;
   }
-  main .deporte img p {
+  main .deporte p {
     font-size: 14px;
   }
   /* Footer */
   footer {
     text-align: center;
-    font-size: 12px;
-    padding: 1rem;
+    font-size: 13px;
+    padding: 1.5rem;
   }
   footer p {
     margin: 0.3rem 0;
   }
-}
-/* media query tablet 768 px */
-/* index */
-@media (max-width: 768px) {
-  body p {
-    font-size: 14px;
-    text-align: center;
-  }
-}
-main h2 {
-  font-size: 20px;
-  margin: 2rem 0 1rem 0;
-}
-main h3 {
-  font-size: 18px;
-  margin-bottom: 1rem;
-}
-main header .header {
-  padding: 1.5rem 0;
-}
-main header .contenedor {
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
-}
-main header nav ul {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  padding-left: 0;
-}
-main header nav li {
-  list-style: none;
-}
-main .productos,
-main .outfits {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-main .productos div,
-main .outfits div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .productos img,
-main .outfits img {
-  width: 100%;
-}
-main .outfits p {
-  font-size: 14px;
-  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

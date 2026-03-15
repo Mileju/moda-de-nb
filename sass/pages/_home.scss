@@ -204,7 +204,7 @@ footer {
     }
 }
 
-/* MQ TABLET 768 px */
+/* MQ celular 375 px */
 /* index */
 @media (max-width: 375px) {
 
@@ -307,20 +307,18 @@ footer {
         }
     }
 
-    body {
-        p {
-            .contacto h1 {
-                h3 {
-                    .formulario {
-                        label {
-                            font-size: 14px;
-                            text-align: center;
-                        }
-                    }
-                }
+            .contacto h1,
+            .contacto h3 {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .formulario label {
+                font-size: 14px;
+                text-align: center;
             }
         }
-    }
+    
 
     /* Header */
     header {
@@ -454,12 +452,15 @@ footer {
                 @include imagen (100%);
                 max-width: 250px;
                 @include margin;
-
-                p {
-                    font-size: 14px;
-                }
             }
+
+            p {
+                font-size: 14px;
+                text-align: center;
+            }
+
         }
+
 
         .deporte {
             @include bio;
@@ -471,11 +472,10 @@ footer {
                 @include imagen (100%);
                 max-width: 250px;
                 @include margin;
-
+            }
                 p {
                     font-size: 14px;
                 }
-            }
         }
     }
 
@@ -489,7 +489,7 @@ footer {
             margin: 0.3rem 0;
         }
     }
-}
+
 
 /* media query tablet 768 px */
 /* index */
@@ -499,37 +499,80 @@ footer {
             @include texto;
         }
     }
-}
-
-main {
-    h2 {
-        font-size: 20px;
-        margin: 2rem 0 1rem 0;
-    }
-
-    h3 {
-        font-size: 18px;
-        margin-bottom: 1rem;
-    }
 
 
-    header {
-        .header {
-            padding: 1.5rem 0;
+    main {
+        h2 {
+            font-size: 20px;
+            margin: 2rem 0 1rem 0;
         }
 
-        .contenedor {
-            @include gap;
-            align-items: center;
+        h3 {
+            font-size: 18px;
+            margin-bottom: 1rem;
         }
+
+
+        header {
+            .header {
+                padding: 1.5rem 0;
+            }
+
+            .contenedor {
+                @include gap;
+                align-items: center;
+            }
+
+            nav {
+                ul {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 1rem;
+                    margin-top: 1rem;
+                    padding-left: 0;
+                }
+
+                li {
+                    list-style: none;
+                }
+            }
+        }
+
+        .productos,
+        .outfits {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+
+            div {
+                @include flex;
+            }
+
+            img {
+                @include imagen (100%);
+            }
+        }
+
+        .outfits {
+            p {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+
+    footer {
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 13px;
 
         nav {
             ul {
                 flex-direction: row;
-                flex-wrap: wrap;
                 justify-content: center;
                 gap: 1rem;
-                margin-top: 1rem;
                 padding-left: 0;
             }
 
@@ -539,33 +582,184 @@ main {
         }
     }
 
-    .productos,
-    .outfits {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        margin-top: 1.5rem;
+    .dropdown {
+        @include imagen (auto);
 
-        div {
-            @include flex;
+        button {
+            @include imagen (auto);
         }
+    }
+
+    /* pagina contacto */
+    /* Header */
+    header {
+        padding: 1.5rem 0;
+        @include bio;
+        gap: 0.5rem;
 
         img {
-            @include imagen (100%);
+            @include imagen (100px);
+            @include margin;
+        }
+
+        nav {
+            .breadcrumb {
+                padding: 0.5rem;
+            }
+
+            ol {
+                @include breadcrumb;
+            }
+
+            li {
+                font-size: 13px;
+                margin: 0.2rem 0;
+            }
         }
     }
 
-    .outfits {
-        p {
+    /*main*/
+    main {
+        .main {
+            padding: 1rem;
             font-size: 14px;
-            text-align: center;
+        }
+
+        .contacto {
+            @include bio;
+            gap: 1rem;
+
+            .logo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            img {
+                @include imagen (100%);
+                height: auto;
+            }
+        }
+
+        aside {
+            .sidebar {
+                padding: 1rem;
+            }
+
+            .formulario {
+                display: flex;
+                @include gap;
+
+                input,
+                textarea {
+                    @include imagen (100%);
+                    padding: 0.5rem;
+                }
+            }
         }
     }
 
+    /*footer*/
+    footer {
+        ul {
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+            padding-left: 0;
+        }
 
+        li {
+            list-style: none;
+        }
 
+        .footer {
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 13px;
+        }
+    }
 
+    /* pagina quien es nabi */
 
+    /* Header */
 
+    header {
+        .contenedor {
+            @include bio;
+            gap: 0.5rem;
+            padding: 1rem 0;
 
+            img {
+                @include imagen (100px);
+                @include margin;
+            }
+        }
+
+        nav {
+            .breadcrumb {
+                padding: 0.5rem;
+
+                ol {
+                    @include breadcrumb;
+
+                    li {
+                        font-size: 13px;
+                        margin: 0.2rem 0;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        padding: 1rem;
+        font-size: 14px;
+
+        .bio {
+            @include bio;
+            gap: 1rem;
+            text-align: center;
+            margin: 1rem 0;
+
+            img {
+                @include imagen (100%);
+                max-width: 300px;
+                @include margin;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .deporte {
+            @include bio;
+            gap: 1rem;
+            text-align: center;
+            margin: 1rem 0;
+
+            img {
+                @include imagen (100%);
+                max-width: 300px;
+                @include margin;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        font-size: 13px;
+        padding: 1.5rem;
+
+        p {
+            margin: 0.3rem 0;
+        }
+    }
 }
