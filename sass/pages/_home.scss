@@ -289,3 +289,41 @@ footer {
     }
 }
 
+/* Footer nav */
+
+footer {
+    nav {
+        ul {
+            @include gap;
+            padding-left: 0;
+        }
+    }
+}
+
+/* Dropdown bootstrap */
+.dropdown {
+    button {
+        width: 100%;
+    }
+}
+
+body {
+    p {
+        .contacto {
+
+            h1,
+            {
+
+            h3,
+            {
+            .formulario {
+                label {
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+}
+}

@@ -252,5 +252,21 @@ footer p {
     display: block;
   }
 }
+/* Footer nav */
+footer nav ul {
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 0;
+}
+
+/* Dropdown bootstrap */
+.dropdown button {
+  width: 100%;
+}
+
+body p .contacto h1 h3 .formulario label {
+  font-size: 14px;
+  text-align: center;
+}
 
 /*# sourceMappingURL=main.css.map */

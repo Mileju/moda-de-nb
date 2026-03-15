@@ -41,6 +41,12 @@
     gap: 0.5rem;
 }
 
+@mixin margin {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 //con y sin parametros
 @mixin imagen ($width) {
     width: $width;
