@@ -5,6 +5,9 @@
 }
 
 /* body */
+body {
+  overflow-x: hidden;
+}
 /* header */
 .contenedor {
     display: flex;
@@ -34,7 +37,7 @@ header {
 /* Main */
 
 main {
-    padding: 3rem 4rem;
+    padding: 3rem 1rem;
 }
 
 
@@ -102,6 +105,8 @@ body p {
 footer {
     background-color: #C3B1E1;
     font-family: serif;
+    color: black;
+  width: 100%;
 
 }
 

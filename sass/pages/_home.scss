@@ -3,10 +3,14 @@
 
 //index
 //body
+
+
 body {
-    p {
-        font-size: 14px;
-    }
+  overflow-x: hidden;
+
+  p {
+    font-size: 14px;
+  }
 }
 
 //header
@@ -37,7 +41,7 @@ header {
 
 //main
 main {
-    padding: 3rem 4rem;
+    padding: 3rem 1rem;
     font-family: serif;
     font-size: 20px;
     text-align: center;
@@ -90,6 +94,7 @@ main {
 footer {
     color: $color-secundario;
     font-family: serif;
+    color: black;
     margin-top: 4rem;
     padding: 2rem;
 
